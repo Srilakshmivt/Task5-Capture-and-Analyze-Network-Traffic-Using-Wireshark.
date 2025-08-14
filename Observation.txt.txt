@@ -1,0 +1,49 @@
+Title: Network Traffic Analysis with Wireshark 
+
+Objective:-
+Capture live network packets and identify basic protocols and traffic types.
+
+Tools Used:-
+Wireshark (version 4.4.8)
+
+Procedure:-
+
+1. Opened Wireshark and selected the active network interface (Wi-Fi).
+
+2. Started packet capture and generated traffic by browsing, searching on Google, and watching a short YouTube video.
+
+3. Stopped the capture after 3 minutes and saved it as a network capture. Pcap.
+
+4. Used the “Protocol” column and “Statistics ? Protocol Hierarchy” to identify traffic types.
+
+Findings:-
+
+Total Packets Captured :-   90075
+
+Main Protocols Identified: HTTP, DNS, TCP/UDP.
+
+HTTP (10%) – Web traffic in plaintext.
+
+HTTPS (60%) – Encrypted web traffic.
+
+DNS (5%) – Domain lookups.
+
+TCP (20%) – Transport connections.
+
+ARP (3%) – Local address resolution.
+
+
+Traffic Types:-
+
+Web browsing (HTTP/HTTPS)
+
+DNS resolution
+
+TCP/UDP
+
+Background system services
+
+Conclusion:-
+The capture showed a mix of encrypted and unencrypted traffic, with HTTPS dominating due to secure browsing. DNS queries and ARP requests were frequent, indicating normal network activity.
+An ARP request packet is a message used in local networks to find the MAC address of a device when its IP address is known.
+DNS query, also known as a DNS request, is a message sent from a user's computer (the DNS client) to a DNS server to find the IP address associated with a domain name
